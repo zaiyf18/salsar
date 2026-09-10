@@ -1487,10 +1487,16 @@ Google Sheets (14 tabs) + 3 Drive folders</pre>
 <li>تحقّق: حاول فتح <span dir="ltr">config.php</span> من المتصفح — يجب أن يفشل دائمًا.</li>
 </ol>
 <p>التفصيل الكامل في <span dir="ltr">docs/01-install.md</span> داخل المستودع.</p></section>
-<section><h3><span class="n">7</span>الترخيص والتواصل</h3><p>هذا المشروع منشور <b>للاطّلاع والدراسة والتقييم فقط</b>. قراءة الكود وفهمه والاقتباس منه للنقد أو التعليم مع نسبته إلى مصدره — مسموح. أما النسخ أو التشغيل أو التركيب أو التعديل أو التوزيع أو البيع فممنوعة بلا إذن كتابي مسبق.</p>
-<p>غياب رخصة مفتوحة هنا <b>منعٌ لا سهو</b>. النص الكامل في ملف <span dir="ltr">LICENSE</span>.</p>
+<section><h3><span class="n">7</span>الترخيص والتواصل</h3><p>هذا المشروع <b>مفتوح المصدر</b> برخصة <span dir="ltr">Apache License 2.0</span>. لك أن تستعمله وتنسخه وتعدّله وتوزّعه وتبيعه، بشرطين:</p>
+<ul>
+<li><b>أشِر إلى المصدر</b>: أبقِ إشعار حقوق النشر وملف <span dir="ltr">NOTICE</span> في نسخك.</li>
+<li><b>بيّن ما غيّرت</b>: من عدّل الملفات يذكر أنه عدّلها.</li>
+</ul>
+<p>واسم «سلسار / <span dir="ltr">SalSar</span>» وشعاره خارج الترخيص صراحةً — العلامات التجارية لا تُمنح مع الكود.</p>
+<p class="warn"><b>إخلاء مسؤولية.</b> يُقدَّم البرنامج «كما هو» بلا أي ضمان، ولا يتحمّل صاحب الحقوق أي مسؤولية عن أي ضرر ناشئ عن استعماله — أيًّا كان الاستعمال، حسنًا كان أو سيئًا. ولأنه يُنتج محاضر تُوقَّع وقد يُحتجّ بها: <b>لا إقرار بأن مخرجاته صالحة قانونًا أو مقبولة لدى أي جهة أو محكمة في أي دولة</b>، والتحقق من موافقة الأنظمة مسؤولية من يركّبه ويشغّله وحده. ونصوص الإقرارات والترجمات هنا أمثلة عملية لا استشارة قانونية.</p>
 <p>كل الأسماء واللوحات وأرقام الهوية والهياكل في هذا العرض <b>مختلقة بالكامل</b> ولا تخصّ أي شخص أو مركبة.</p>
-<p class="tip">للاقتراحات والملاحظات: صفحة <b>Issues</b> في مستودع المشروع على <span dir="ltr">GitHub</span>. <span class="soon">— يُضاف الرابط عند نشر المستودع.</span></p></section>
+<p class="tip">المستودع: <a href="https://github.com/zaiyf18/salsar" target="_blank" rel="noopener">github.com/zaiyf18/salsar</a><br>
+للاقتراحات والملاحظات: <a href="https://github.com/zaiyf18/salsar/issues" target="_blank" rel="noopener">صفحة Issues</a> — افتح ملاحظة وسيُقرأ.</p></section>
 <section class="dl"><h3><span class="n">↓</span>قالب الجدول</h3>
 <p>ملف <span dir="ltr">xlsx</span> فيه الأوراق الأربع عشرة برؤوس أعمدتها كما يقرؤها الكود بالضبط، وبنود التشييك الـ120 وخياراتها معبّأة، وورقة «اقرأني» تشرح ما تملؤه وما يملؤه النظام.</p>
 <button type="button" id="guideDl">تحميل قالب الجدول</button>
@@ -1728,7 +1734,49 @@ Google Sheets (14 tabs) + 3 Drive folders</pre>
  "جهاز تتبع": "Tracking device",
  "واير سحب": "Tow rope",
  "كيبل اشتراك": "Jump-start cable",
- "سجل الصيانة": "Maintenance log"
+ "سجل الصيانة": "Maintenance log",
+ "رقم المركبة": "Vehicle number",
+ "العهدة الحالية لدى": "Currently in custody of",
+ "الأصول المسجلة": "Registered assets",
+ "لا توجد أصول مسجلة حاليًا.": "No assets are currently registered.",
+ "لا توجد عمليات نقل أصول لهذه المركبة.": "No asset transfers for this vehicle.",
+ "لا توجد محاضر مسجلة حتى الآن.": "No records yet.",
+ "لا توجد مركبات في العهدة حاليًا.": "No vehicles are currently in custody.",
+ "لا توجد صور مرفوعة لهذا المحضر.": "No photos uploaded for this record.",
+ "لا توجد ملاحظات": "No notes",
+ "سجل تغييرات طراز المركبة": "Vehicle model change log",
+ "سجل محاضر المركبة": "Vehicle record log",
+ "صور المحضر": "Record photos",
+ "كل محاضر التسليم والاستلام": "All handover records",
+ "الأصول المنقولة": "Assets transferred",
+ "بدء تسليم / استلام": "Start a handover",
+ "تغيير طراز المركبة": "Change vehicle model",
+ "تفاصيل محضر العهدة": "Handover record details",
+ "تفاصيل محضر نقل الأصول": "Asset transfer record details",
+ "محضر التسليم والاستلام": "Handover record",
+ "محضر نقل الأصول": "Asset transfer record",
+ "من المركبة / المسلّم": "From vehicle / sender",
+ "إلى المركبة / المستلم": "To vehicle / recipient",
+ "سبب النقل والملاحظات": "Reason for transfer and notes",
+ "سجل محفوظ للقراءة فقط": "Saved, read-only record",
+ "الصور والعمليات": "Photos and operations",
+ "عدد العمليات المسجلة": "Recorded operations",
+ "عدد الصور الحالية": "Current photos",
+ "قراءة العداد": "Odometer reading",
+ "عرض": "View",
+ "نشط": "Active",
+ "مؤرشف": "Archived",
+ "تسجيل أولي": "Initial registration",
+ "تسليم": "Handed over",
+ "استلام": "Received",
+ "وثائق المركبة الحالية": "Current vehicle documents",
+ "نقل مؤقت لحين توفير بديل": "Temporary transfer pending a replacement",
+ "أرفف تثبيت": "Fixing shelves",
+ "حزام شدّ إضافي": "Extra tie-down strap",
+ "وحدة تبريد": "Refrigeration unit",
+ "مكثّف": "Condenser",
+ "حساس حرارة المقصورة": "Cabin temperature sensor",
+ "نُزعت وحدة التبريد بعد عطل المكثّف، وحُوّلت المركبة إلى صندوق مغلق": "The refrigeration unit was removed after a condenser failure; the vehicle was converted to a closed box"
 };</script><style>
 /* وضع الإنجليزية: الشريط الجانبي مثبَّت بخاصية فيزيائية، فيُنقل يسارًا هنا. */
 body.salsar-en .app{direction:ltr}
@@ -1792,6 +1840,29 @@ body.salsar-en .brand small[lang="en"]{display:none}
       return new Date().toLocaleDateString('en-GB',
         {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'});
     }],
+    [/^(\d+)\s*فروقات$/, '$1 differences'],
+    [/^من (.+?) إلى (.+)$/, function (m, a, b) {
+      return 'from ' + (translate(a) || a) + ' to ' + (translate(b) || b);
+    }],
+    /* «عنوان (٣)» — العنوان يُترجم والعدد يبقى */
+    [/^(.+?)\s*\((\d+)\)$/, function (m, a, n) {
+      var t = translate(a); return t == null ? null : t + ' (' + n + ')';
+    }],
+    /* «رقم — وصف» */
+    [/^([A-Z]{1,3}-[\w-]+)\s*—\s*(.+)$/, function (m, id, rest) {
+      var t = translate(rest); return t == null ? null : id + ' — ' + t;
+    }],
+    /* أجزاء مفصولة بـ · أو — : يُترجم ما يُعرف ويبقى الباقي (تواريخ، لوحات، أسماء) */
+    [/^[^·—]+(?:\s*[·—]\s*[^·—]+)+$/, function (m) {
+      var bits = m.split(/\s*([·—])\s*/), any = false;
+      var out = bits.map(function (x) {
+        if (x === '·' || x === '—') return ' ' + x + ' ';
+        var t = translate(x);
+        if (t != null) { any = true; return t; }
+        return x;
+      }).join('').replace(/\s+/g, ' ').trim();
+      return any ? out : null;
+    }],
     /* قوائم مفصولة بفاصلة عربية: تُترجم أجزاؤها ثم تُجمع */
     [/^[^،]+(?:،\s*[^،]+)+$/, function (m) {
       var parts = m.split(/،\s*/).map(function (x) { return translate(x) || x; });
@@ -1807,10 +1878,10 @@ body.salsar-en .brand small[lang="en"]{display:none}
     if (data[s] != null) return data[s];
     for (var i = 0; i < RULES.length; i++) {
       var m = s.match(RULES[i][0]);
-      if (m) {
-        var r = RULES[i][1];
-        return typeof r === 'function' ? r.apply(null, m) : s.replace(RULES[i][0], r);
-      }
+      if (!m) continue;
+      var r = RULES[i][1];
+      var out = typeof r === 'function' ? r.apply(null, m) : s.replace(RULES[i][0], r);
+      if (out != null) return out;   // قاعدة عجزت ⇐ جرّب التالية
     }
     return null;
   }
