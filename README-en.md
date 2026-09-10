@@ -2,9 +2,13 @@
 
 A vehicle handover system where the **printed record and the electronic record must agree** — because the paper is what gets signed, and the signature is what makes it binding.
 
-> **Demo data.** Every plate, name, identity number, chassis number and figure in this repository is fabricated. See `LICENSE` for terms — this is source-available for study, not licensed for use.
+> **Demo data.** Every plate, name, identity number, chassis number and figure in this repository is fabricated.
+> **Open source** under `Apache-2.0`: use it, modify it, distribute it, sell it — in exchange for attribution and stating your changes.
+> Read `NOTICE` before deploying: the software is provided "as is", with no warranty and no liability.
 
 ---
+
+**Try it before reading a line:** open [`demo.html`](demo.html) in your browser — one file, no install, no server. An **English** button flips the whole interface.
 
 ## What it does
 
@@ -19,7 +23,9 @@ A vehicle handover system where the **printed record and the electronic record m
 
 The results sheet is a **delta log, not a state log**. A row is written only when an item's status actually changes; the standing state of any item is derived by replaying deltas. This is enforced twice — in the browser and again on the server.
 
-It matters because it is the source of the system's hardest bug: the print path once assumed that any item absent from a record's delta set was "no issue", so an item standing at "not applicable" — inherited from an earlier record and shown that way to the operator — printed as *no issue*. The appendix did not merely omit the fact; it asserted the opposite. Anyone editing the print path without understanding this decision will reintroduce it.
+What this buys you is that a record shows the vehicle's **standing condition**, not just the edits made today: an item sitting at "not applicable" — inherited from an earlier record — appears in the new record exactly as its editor sees it on screen, because the signed paper must describe the vehicle as it is, not only as it changed.
+
+Anyone touching the print path should know this decision first: treating a missing result row as "no issue" produces a record that contradicts what its editor saw, and contradicts the verification hash printed on it.
 
 ## Architecture
 
