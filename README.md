@@ -91,6 +91,3 @@ Google Sheets (14 ورقة) + ثلاثة مجلدات Drive
 سجل عهدة المركبات · محضر تسليم واستلام مركبة · إدارة أسطول · عهدة السائق · قائمة تشييك المركبات · محضر مصادق · ترجمة محضر · نظام عهدة · وثائق المركبة · الفحص الدوري
 
 `vehicle-custody · vehicle-handover · fleet-management · inspection-checklist · arabic-rtl · google-apps-script · google-sheets · php · multilingual · saudi-arabia`
-
-> للمالك: ضع هذه في **Topics** أعلى صفحة المستودع (⚙️ بجوار About) — هي ما يبحث فيه قيتهوب فعلًا:
-> `vehicle-custody · vehicle-handover · fleet-management · inspection-checklist · arabic-rtl · rtl · google-apps-script · google-sheets · php · multilingual · saudi-arabia · logistics`
