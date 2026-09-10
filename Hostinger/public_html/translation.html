@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>SalSar | Record translation</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#faf6fc;color:#241130;font-family:Calibri,Arial,sans-serif}.wrap{max-width:980px;margin:28px auto;padding:18px}.card{background:#fff;border:1px solid #e3d0ee;border-radius:18px;padding:24px;box-shadow:0 8px 24px #0a173014}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;border-bottom:2px solid #53276e;padding-bottom:14px}h1{margin:0;font-size:30px}h2{font-size:20px;margin:20px 0 10px}.muted{color:#756480}.ack,.notice{background:#faf4fd;border:1px solid #d6c2e2;border-radius:12px;padding:14px;margin-top:16px;line-height:1.6}.ack p{white-space:pre-line}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.field{border:1px solid #e9dff0;border-radius:10px;padding:10px}.field small{display:block;color:#756480}.field b{display:block;margin-top:4px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{border:1px solid #e3d0ee;padding:9px;text-align:start}th{background:#f2e7f9}footer{display:flex;justify-content:space-between;border-top:1px solid #d6c2e2;margin-top:18px;padding-top:12px}.error{max-width:680px;margin:15vh auto;background:#fff;border:1px solid #e2b8b3;border-radius:18px;padding:28px;text-align:center;color:#8f1d14}@media(max-width:650px){.wrap{margin:0;padding:0}.card{padding:15px;border-radius:0}.grid{grid-template-columns:1fr}header{display:block}header>b{display:block;margin-top:8px}table{font-size:12px}th,td{padding:6px}}
+  </style>
+</head>
+<body>
+  <main id="app"><div class="error">Loading…</div></main>
+  <script>
+    const receiptLanguages={
+  ar:{name:'العربية',dir:'rtl',title:'إقرار المستلم',notice:'يُعتد بالنص العربي عند وجود اختلاف مع أي ترجمة.',text:'أقرّ باستلامي المركبة الموضحة في هذا المحضر، وبأن بيانات التسليم ونتائج الفحص قد عُرضت عليّ بلغتي، وأُتيحت لي فرصة الاطلاع عليها والاستفسار عنها قبل التوقيع.\n\nوأقرّ بأنني مسؤول عن متابعة المركبة أثناء وجودها في عهدتي، وإجراء الفحص الظاهري والدوري لها قبل القيادة، وبصفة خاصة: المحرك، وأنظمة سلامة المركبة والقيادة، والإضاءة والإشارات، والإطارات، والفرامل، وكل ما يتصل بالسلامة المرورية.\n\nوأتعهد بالتوقف عن استخدام المركبة عند وجود عطل يؤثر في سلامة التشغيل أو القيادة، وبإبلاغ مسؤول المركبات فورًا عبر الواتساب، مع توثيق البلاغ.\n\nكما أقرّ بأن عدم الإبلاغ عن أيٍّ من ذلك يحمّلني تبعاته، وقد يعرّضني للمساءلة القانونية و/أو للمساءلة وفق الأنظمة وسياسات المنشأة، دون إخلال بمسؤوليات المنشأة النظامية المتعلقة بالصيانة والسلامة.\n\nويرتبط توقيعي بكامل هذا المحضر وملحقاته الإلكترونية المرتبطة برقمه وتاريخه ورمز التحقق المبيّن فيه. ويُعتد بالنص العربي عند وجود اختلاف مع أي ترجمة.\n\nرقم مسؤول المركبات (واتساب): 05XXXXXXXX'},
+  en:{name:'English',dir:'ltr',title:'Recipient acknowledgement',notice:'In case of any discrepancy with a translation, the Arabic text shall prevail.',text:'I acknowledge receipt of the vehicle identified in this record, that the handover information and inspection results were presented to me in my language, and that I was given the opportunity to review them and ask questions before signing.\n\nI acknowledge that I am responsible for monitoring the vehicle while it is in my custody, and for carrying out visual and periodic checks before driving, in particular: the engine, the vehicle and driving safety systems, the lights and indicators, the tyres, and the brakes, and everything relating to road safety.\n\nI undertake to stop using the vehicle if a fault affects safe operation or driving, and to notify the Vehicles Officer immediately via WhatsApp, documenting the report.\n\nI further acknowledge that failure to report any of the above makes me liable for its consequences, and may expose me to legal accountability and/or accountability under the regulations and policies of the establishment, without prejudice to the statutory responsibilities of the establishment regarding maintenance and safety.\n\nMy signature applies to this entire record and its electronic annexes linked to its number, its date and the verification code shown on it. In case of any discrepancy with a translation, the Arabic text shall prevail.\n\nVehicles Officer number (WhatsApp): 05XXXXXXXX'},
+  hi:{name:'हिन्दी',dir:'ltr',title:'प्राप्तकर्ता की स्वीकृति',notice:'किसी अनुवाद से अंतर होने पर अरबी पाठ मान्य होगा।',text:'मैं इस अभिलेख में उल्लिखित वाहन की प्राप्ति स्वीकार करता हूँ, तथा यह भी कि हस्तांतरण की जानकारी और निरीक्षण के परिणाम मुझे मेरी भाषा में दिखाए गए, और हस्ताक्षर से पहले उन्हें देखने तथा प्रश्न पूछने का अवसर दिया गया।\n\nमैं स्वीकार करता हूँ कि वाहन के मेरी अभिरक्षा में रहने के दौरान उसकी निगरानी, और चलाने से पहले दृश्य तथा नियमित जाँच मेरी जिम्मेदारी है, विशेष रूप से: इंजन, वाहन और ड्राइविंग सुरक्षा प्रणालियाँ, लाइटें और संकेतक, टायर, तथा ब्रेक, और सड़क सुरक्षा से संबंधित सब कुछ।\n\nमैं वचन देता हूँ कि सुरक्षित संचालन या ड्राइविंग को प्रभावित करने वाली खराबी होने पर वाहन का उपयोग बंद कर दूँगा, और वाहन अधिकारी को तुरंत व्हाट्सएप के माध्यम से सूचित कर रिपोर्ट का दस्तावेजीकरण करूँगा।\n\nमैं यह भी स्वीकार करता हूँ कि इनमें से किसी की सूचना न देने के परिणामों का उत्तरदायी मैं रहूँगा, और मुझे कानूनी जवाबदेही और/या संस्थान के नियमों तथा नीतियों के तहत जवाबदेही का सामना करना पड़ सकता है, रखरखाव और सुरक्षा से संबंधित संस्थान की वैधानिक जिम्मेदारियों पर प्रभाव डाले बिना।\n\nमेरा हस्ताक्षर इस पूरे अभिलेख और उसके इलेक्ट्रॉनिक संलग्नकों पर लागू होता है जो उसकी संख्या, तिथि और उस पर दर्शाए गए सत्यापन कोड से जुड़े हैं। किसी अनुवाद से अंतर होने पर अरबी पाठ मान्य होगा।\n\nवाहन अधिकारी का नंबर (व्हाट्सएप): 05XXXXXXXX'},
+  bn:{name:'বাংলা',dir:'ltr',title:'গ্রহীতার স্বীকৃতি',notice:'কোনো অনুবাদের সঙ্গে অমিল হলে আরবি পাঠ প্রাধান্য পাবে।',text:'আমি এই নথিতে উল্লিখিত যানবাহন গ্রহণ করেছি বলে স্বীকার করছি, এবং হস্তান্তরের তথ্য ও পরিদর্শনের ফলাফল আমার ভাষায় আমাকে দেখানো হয়েছে, এবং স্বাক্ষরের আগে সেগুলো দেখার ও প্রশ্ন করার সুযোগ দেওয়া হয়েছে।\n\nআমি স্বীকার করছি যে যানবাহনটি আমার হেফাজতে থাকাকালীন তার তত্ত্বাবধান এবং চালানোর আগে দৃশ্যমান ও নিয়মিত পরীক্ষা করা আমার দায়িত্ব, বিশেষত: ইঞ্জিন, যানবাহন ও চালনার নিরাপত্তা ব্যবস্থা, বাতি ও সংকেত, টায়ার, এবং ব্রেক, এবং সড়ক নিরাপত্তাসংক্রান্ত সব কিছু।\n\nআমি অঙ্গীকার করছি যে নিরাপদ পরিচালনা বা চালনাকে প্রভাবিত করে এমন ত্রুটি থাকলে আমি যানবাহনের ব্যবহার বন্ধ করব এবং অবিলম্বে হোয়াটসঅ্যাপের মাধ্যমে যানবাহন কর্মকর্তাকে জানিয়ে প্রতিবেদনটি নথিভুক্ত করব।\n\nআমি আরও স্বীকার করছি যে এগুলোর কোনোটি না জানানোর পরিণতির দায় আমার, এবং আমাকে আইনি জবাবদিহি এবং/অথবা প্রতিষ্ঠানের বিধি ও নীতির অধীনে জবাবদিহির সম্মুখীন হতে হতে পারে, রক্ষণাবেক্ষণ ও নিরাপত্তাসংক্রান্ত প্রতিষ্ঠানের আইনগত দায়িত্বের ক্ষতি না করে।\n\nআমার স্বাক্ষর এই সম্পূর্ণ নথি ও তার ইলেকট্রনিক সংযুক্তিগুলোর ওপর প্রযোজ্য, যেগুলো এর নম্বর, তারিখ ও এতে উল্লিখিত যাচাই কোডের সঙ্গে সংযুক্ত। কোনো অনুবাদের সঙ্গে অমিল হলে আরবি পাঠ প্রাধান্য পাবে।\n\nযানবাহন কর্মকর্তার নম্বর (হোয়াটসঅ্যাপ): 05XXXXXXXX'},
+  ne:{name:'नेपाली',dir:'ltr',title:'प्राप्तकर्ताको स्वीकारोक्ति',notice:'कुनै अनुवादसँग फरक परेमा अरबी पाठ मान्य हुनेछ।',text:'म यस अभिलेखमा उल्लेख गरिएको सवारी साधन प्राप्त गरेको स्वीकार गर्दछु, र हस्तान्तरण विवरण तथा निरीक्षणका नतिजाहरू मेरो भाषामा मलाई देखाइएको र हस्ताक्षर गर्नुअघि तिनलाई हेर्ने र प्रश्न सोध्ने अवसर दिइएको स्वीकार गर्दछु।\n\nम स्वीकार गर्दछु कि सवारी मेरो जिम्मामा रहँदा त्यसको अनुगमन र चलाउनुअघि दृश्य तथा आवधिक जाँच गर्नु मेरो जिम्मेवारी हो, विशेष गरी: इन्जिन, सवारी र ड्राइभिङ सुरक्षा प्रणाली, बत्ती र सङ्केत, टायर, र ब्रेक, तथा सडक सुरक्षासम्बन्धी सबै कुरा।\n\nम प्रतिबद्ध छु कि सुरक्षित सञ्चालन वा ड्राइभिङमा असर गर्ने खराबी भएमा म सवारीको प्रयोग रोक्नेछु र तुरुन्तै ह्वाट्सएपमार्फत सवारी अधिकारीलाई जानकारी दिई प्रतिवेदन अभिलेख गर्नेछु।\n\nम यो पनि स्वीकार गर्दछु कि यीमध्ये कुनै पनि जानकारी नदिएको परिणामको दायित्व ममा रहनेछ, र मलाई कानुनी जवाफदेहिता र/वा संस्थाका नियम तथा नीतिअनुसार जवाफदेहिताको सामना गर्नुपर्न सक्छ, मर्मत र सुरक्षासम्बन्धी संस्थाको कानुनी जिम्मेवारीमा कुनै असर नपारी।\n\nमेरो हस्ताक्षर यस सम्पूर्ण अभिलेख र यसका इलेक्ट्रोनिक संलग्नकहरूमा लागू हुन्छ, जुन यसको नम्बर, मिति र यसमा उल्लिखित प्रमाणीकरण कोडसँग जोडिएका छन्। कुनै अनुवादसँग फरक परेमा अरबी पाठ मान्य हुनेछ।\n\nसवारी अधिकारीको नम्बर (ह्वाट्सएप): 05XXXXXXXX'},
+  ur:{name:'اردو',dir:'rtl',title:'وصول کنندہ کا اقرار',notice:'کسی ترجمے سے اختلاف کی صورت میں عربی متن معتبر ہوگا۔',text:'میں اس محضر میں درج گاڑی وصول کرنے کا اقرار کرتا ہوں، اور یہ کہ حوالگی کی معلومات اور معائنے کے نتائج مجھے میری زبان میں دکھائے گئے، اور دستخط سے پہلے انہیں دیکھنے اور سوال کرنے کا موقع دیا گیا۔\n\nمیں اقرار کرتا ہوں کہ گاڑی میری تحویل میں رہنے کے دوران اس کی نگرانی، اور چلانے سے پہلے ظاہری و باقاعدہ جانچ میری ذمہ داری ہے، خاص طور پر: انجن، گاڑی اور ڈرائیونگ کے حفاظتی نظام، لائٹس اور اشارے، ٹائر، اور بریک، اور سڑک کی حفاظت سے متعلق ہر چیز۔\n\nمیں عہد کرتا ہوں کہ اگر کوئی خرابی محفوظ استعمال یا ڈرائیونگ کو متاثر کرے تو گاڑی کا استعمال روک دوں گا، اور گاڑیوں کے ذمہ دار کو فوراً واٹس ایپ کے ذریعے اطلاع دوں گا اور اطلاع کو دستاویزی شکل دوں گا۔\n\nمزید یہ کہ ان میں سے کسی کی اطلاع نہ دینے کے نتائج کا ذمہ دار میں ہوں گا، اور مجھے قانونی مواخذے اور/یا ادارے کے ضوابط و پالیسیوں کے تحت مواخذے کا سامنا ہو سکتا ہے، بغیر اس کے کہ دیکھ بھال اور حفاظت سے متعلق ادارے کی قانونی ذمہ داریوں پر کوئی اثر پڑے۔\n\nمیرے دستخط اس مکمل محضر اور اس کے الیکٹرانک منسلکات پر لاگو ہوتے ہیں جو اس کے نمبر، تاریخ اور اس پر درج تصدیقی کوڈ سے منسلک ہیں۔ کسی ترجمے سے اختلاف کی صورت میں عربی متن معتبر ہوگا۔\n\nگاڑیوں کے ذمہ دار کا نمبر (واٹس ایپ): 05XXXXXXXX'}
+};
+    const publicTranslationLabels={
+  en:{dir:'ltr',recordTitle:'Vehicle handover record',details:'Record details',recordNo:'Record number',date:'Date',plate:'Vehicle plate',vehicleRef:'Vehicle reference',category:'Vehicle category',from:'Delivered by',to:'Received by',odometer:'Odometer reading',summary:'Inspection summary',observations:'Inspection observations and differences',reference:'Reference',item:'Check item',previous:'Previous condition',current:'Current condition',notes:'General notes',none:'No recorded inspection exceptions.',complete:'The complete Arabic record and its attachments may be requested from the vehicle maintenance officer.',validUntil:'This translation is available until',expired:'This translation link has expired.'},
+  ur:{dir:'rtl',recordTitle:'گاڑی حوالگی کا ریکارڈ',details:'ریکارڈ کی تفصیلات',recordNo:'ریکارڈ نمبر',date:'تاریخ',plate:'گاڑی نمبر پلیٹ',vehicleRef:'گاڑی کا حوالہ',category:'گاڑی کی قسم',from:'حوالہ کرنے والا',to:'وصول کنندہ',odometer:'اوڈومیٹر ریڈنگ',summary:'معائنے کا خلاصہ',observations:'معائنے کے مشاہدات اور فرق',reference:'حوالہ',item:'جانچ کا نکتہ',previous:'سابقہ حالت',current:'موجودہ حالت',notes:'عمومی نوٹس',none:'معائنے میں کوئی مشاہدہ یا فرق درج نہیں ہے۔',complete:'مکمل عربی ریکارڈ اور اس کے منسلکات گاڑیوں کے ذمہ دار سے طلب کیے جا سکتے ہیں۔',validUntil:'یہ ترجمہ اس تاریخ تک دستیاب ہے',expired:'اس ترجمے کے لنک کی مدت ختم ہو چکی ہے۔'},
+  hi:{dir:'ltr',recordTitle:'वाहन हस्तांतरण अभिलेख',details:'अभिलेख का विवरण',recordNo:'अभिलेख संख्या',date:'तारीख',plate:'वाहन नंबर प्लेट',vehicleRef:'वाहन संदर्भ',category:'वाहन श्रेणी',from:'सौंपने वाला',to:'प्राप्तकर्ता',odometer:'ओडोमीटर रीडिंग',summary:'निरीक्षण सारांश',observations:'निरीक्षण टिप्पणियाँ और अंतर',reference:'संदर्भ',item:'जाँच बिंदु',previous:'पिछली स्थिति',current:'वर्तमान स्थिति',notes:'सामान्य टिप्पणियाँ',none:'निरीक्षण में कोई टिप्पणी या अंतर दर्ज नहीं है।',complete:'पूरा अरबी अभिलेख और उसके संलग्नक वाहन प्रभारी से माँगे जा सकते हैं।',validUntil:'यह अनुवाद इस तारीख तक उपलब्ध है',expired:'इस अनुवाद लिंक की अवधि समाप्त हो गई है।'},
+  bn:{dir:'ltr',recordTitle:'যানবাহন হস্তান্তর নথি',details:'নথির বিবরণ',recordNo:'নথি নম্বর',date:'তারিখ',plate:'যানবাহনের নম্বর প্লেট',vehicleRef:'যানবাহন রেফারেন্স',category:'যানবাহনের শ্রেণি',from:'হস্তান্তরকারী',to:'গ্রহণকারী',odometer:'ওডোমিটার রিডিং',summary:'পরিদর্শন সারাংশ',observations:'পরিদর্শনের পর্যবেক্ষণ ও পার্থক্য',reference:'রেফারেন্স',item:'পরীক্ষার বিষয়',previous:'পূর্ববর্তী অবস্থা',current:'বর্তমান অবস্থা',notes:'সাধারণ মন্তব্য',none:'পরিদর্শনে কোনো পর্যবেক্ষণ বা পার্থক্য নথিভুক্ত হয়নি।',complete:'সম্পূর্ণ আরবি নথি ও সংযুক্তি যানবাহন কর্মকর্তার কাছ থেকে চাওয়া যেতে পারে।',validUntil:'এই অনুবাদটি এই তারিখ পর্যন্ত পাওয়া যাবে',expired:'এই অনুবাদ লিংকের মেয়াদ শেষ হয়েছে।'},
+  ne:{dir:'ltr',recordTitle:'सवारी हस्तान्तरण अभिलेख',details:'अभिलेख विवरण',recordNo:'अभिलेख नम्बर',date:'मिति',plate:'सवारी नम्बर प्लेट',vehicleRef:'सवारी सन्दर्भ',category:'सवारी वर्ग',from:'हस्तान्तरण गर्ने',to:'प्राप्तकर्ता',odometer:'ओडोमिटर रिडिङ',summary:'निरीक्षण सारांश',observations:'निरीक्षण टिप्पणी र भिन्नता',reference:'सन्दर्भ',item:'जाँच बुँदा',previous:'अघिल्लो अवस्था',current:'हालको अवस्था',notes:'सामान्य टिप्पणी',none:'निरीक्षणमा कुनै टिप्पणी वा भिन्नता अभिलेख गरिएको छैन।',complete:'पूर्ण अरबी अभिलेख र संलग्न कागजात सवारी जिम्मेवार व्यक्तिबाट माग्न सकिन्छ।',validUntil:'यो अनुवाद यस मितिसम्म उपलब्ध छ',expired:'यो अनुवाद लिङ्कको अवधि समाप्त भएको छ।'}
+};
+    const escapeHtml=value=>String(value??'').replace(/[&<>'"]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
+    function fail(message){document.querySelector('#app').innerHTML='<div class="error"><h1>SalSar | Vehicles Log</h1><p>'+escapeHtml(message)+'</p></div>'}
+    /* v2.2 — إغلاق ثغرة التلفيق:
+       كانت الصفحة تعرض أي حمولة base64 يضعها الزائر في #data= بلا أي تحقق،
+       فيمكن صياغة رابط على نطاق الشركة يعرض محضرًا ملفّقًا بالكامل لسائق
+       قبل أن يوقّع. الآن الصفحة تستقبل رقم الوصول فقط وتجلب البيانات
+       من الخادم، فلا مصدر للمحتوى إلا قاعدة البيانات نفسها. */
+        /* ===== v2.4 — عرض محضر نقل أصول (kind:'asset') ===== */
+    const assetExtraLabels={
+      en:{assetTitle:'Asset transfer record',item:'Asset',fromVehicle:'From vehicle',toVehicle:'To vehicle',assetsHeading:'Transferred assets',condition:'Condition'},
+      ur:{assetTitle:'سامان کی منتقلی کا ریکارڈ',item:'سامان',fromVehicle:'کس گاڑی سے',toVehicle:'کس گاڑی کو',assetsHeading:'منتقل کیا گیا سامان',condition:'حالت'},
+      hi:{assetTitle:'सामान हस्तांतरण अभिलेख',item:'सामान',fromVehicle:'किस वाहन से',toVehicle:'किस वाहन को',assetsHeading:'हस्तांतरित सामान',condition:'स्थिति'},
+      bn:{assetTitle:'সরঞ্জাম হস্তান্তর নথি',item:'সরঞ্জাম',fromVehicle:'কোন যানবাহন থেকে',toVehicle:'কোন যানবাহনে',assetsHeading:'হস্তান্তরিত সরঞ্জাম',condition:'অবস্থা'},
+      ne:{assetTitle:'सामान हस्तान्तरण अभिलेख',item:'सामान',fromVehicle:'कुन सवारीबाट',toVehicle:'कुन सवारीमा',assetsHeading:'हस्तान्तरित सामान',condition:'अवस्था'}
+    };
+
+    function renderAssetTranslation(data){
+      const labels=publicTranslationLabels[data.code]||publicTranslationLabels.en;
+      const extra=assetExtraLabels[data.code]||assetExtraLabels.en;
+      const record=data.record||{};
+      const declaration=data.declaration||{};
+      const expired=!data.expiresAt||Date.now()>Date.parse(data.expiresAt);
+      document.documentElement.lang=data.code||'en';
+      document.documentElement.dir=data.dir||'ltr';
+      if(expired){fail(labels.expired||'This translation link has expired.');throw new Error('expired')}
+
+      const rows=(data.rows||[]).length
+        ? (data.rows||[]).map(row=>'<tr><td dir="ltr">'+escapeHtml(String(row.n||''))+'</td><td>'
+            +escapeHtml(row.item)+'</td><td>'+escapeHtml(row.condition)+'</td></tr>').join('')
+        : '<tr><td colspan="3">—</td></tr>';
+
+      document.querySelector('#app').innerHTML=
+        '<div class="wrap" dir="'+escapeHtml(data.dir||'ltr')+'"><div class="card">'
+        +'<header><div><h1>'+escapeHtml(extra.assetTitle)+'</h1>'
+        +'<p class="muted">SalSar | Vehicles Log</p></div>'
+        +'<b dir="ltr">'+escapeHtml(record.id)+'</b></header>'
+        +'<section class="ack"><h2>'+escapeHtml(declaration.title||'')+'</h2>'
+        +'<p>'+escapeHtml(declaration.text||'')+'</p></section>'
+        +'<h2>'+escapeHtml(labels.details)+'</h2><div class="grid">'
+        +'<div class="field"><small>'+escapeHtml(labels.recordNo)+'</small><b dir="ltr">'+escapeHtml(record.id)+'</b></div>'
+        +'<div class="field"><small>'+escapeHtml(labels.date)+'</small><b dir="ltr">'+escapeHtml(record.date)+'</b></div>'
+        +'<div class="field"><small>'+escapeHtml(extra.fromVehicle)+'</small><b>'+escapeHtml(record.fromVehicle)+'</b></div>'
+        +'<div class="field"><small>'+escapeHtml(extra.toVehicle)+'</small><b>'+escapeHtml(record.toVehicle)+'</b></div>'
+        +'<div class="field"><small>'+escapeHtml(labels.from)+'</small><b>'+escapeHtml(record.giver)+'</b></div>'
+        +'<div class="field"><small>'+escapeHtml(labels.to)+'</small><b>'+escapeHtml(record.receiver)+'</b></div>'
+        +'</div>'
+        +'<section><h2>'+escapeHtml(extra.assetsHeading)+' ('+Number(record.count||0)+')</h2>'
+        +'<table><thead><tr><th>#</th><th>'+escapeHtml(extra.item||labels.item)+'</th><th>'
+        +escapeHtml(extra.condition)+'</th></tr></thead><tbody>'+rows+'</tbody></table></section>'
+        +'<section><p><b>'+escapeHtml(labels.notes)+':</b> '+escapeHtml(record.notes||'—')+'</p></section>'
+        +'<section class="notice"><p>'+escapeHtml(labels.complete)+'</p>'
+        +'<p>'+escapeHtml(labels.validUntil)+': <span dir="ltr">'
+        +escapeHtml(String(data.expiresAt).slice(0,10))+'</span></p></section>'
+        +'<footer><span>Verification</span><b dir="ltr">'+escapeHtml(record.verification)+'</b></footer>'
+        +'</div></div>';
+    }
+
+    function renderTranslation(data){
+      if(data && data.kind==='asset') return renderAssetTranslation(data);
+      let labels=publicTranslationLabels[data.code]||publicTranslationLabels.en,language=receiptLanguages[data.code]||receiptLanguages.en,record=data.record||{},expired=!data.expiresAt||Date.now()>Date.parse(data.expiresAt);
+      document.documentElement.lang=data.code||'en';document.documentElement.dir=data.dir||'ltr';
+      if(expired){fail(labels.expired||'This translation link has expired.');throw new Error('expired')}
+      let rows=(data.rows||[]).length?(data.rows||[]).map(row=>'<tr><td dir="ltr">'+escapeHtml(row.id)+'</td><td>'+escapeHtml(row.item)+'</td><td>'+escapeHtml(row.previous)+'</td><td>'+escapeHtml(row.current)+'</td></tr>').join(''):'<tr><td colspan="4">'+escapeHtml(labels.none||'No recorded inspection exceptions.')+'</td></tr>';
+      document.querySelector('#app').innerHTML='<div class="wrap" dir="'+escapeHtml(data.dir||'ltr')+'"><div class="card"><header><div><h1>'+escapeHtml(labels.recordTitle)+'</h1><p class="muted">SalSar | Vehicles Log</p></div><b dir="ltr">'+escapeHtml(record.id)+'</b></header><section class="ack"><h2>'+escapeHtml(language.title)+'</h2><p>'+escapeHtml(language.text)+'</p><strong>'+escapeHtml(language.notice)+'</strong></section><h2>'+escapeHtml(labels.details)+'</h2><div class="grid"><div class="field"><small>'+escapeHtml(labels.recordNo)+'</small><b dir="ltr">'+escapeHtml(record.id)+'</b></div><div class="field"><small>'+escapeHtml(labels.date)+'</small><b dir="ltr">'+escapeHtml(record.date)+'</b></div><div class="field"><small>'+escapeHtml(labels.plate)+'</small><b>'+escapeHtml(record.plate)+'</b></div><div class="field"><small>'+escapeHtml(labels.vehicleRef)+'</small><b dir="ltr">'+escapeHtml(record.vehicleId)+'</b></div><div class="field"><small>'+escapeHtml(labels.category)+'</small><b>'+escapeHtml(record.category)+'</b></div><div class="field"><small>'+escapeHtml(labels.odometer)+'</small><b dir="ltr">'+Number(record.odometer||0).toLocaleString('en-US')+' km</b></div><div class="field"><small>'+escapeHtml(labels.from)+'</small><b>'+escapeHtml(record.from)+'</b></div><div class="field"><small>'+escapeHtml(labels.to)+'</small><b>'+escapeHtml(record.to)+'</b></div></div><section><h2>'+escapeHtml(labels.summary)+'</h2><p>'+Number(record.checked||0)+' / '+Number(record.normal||0)+' / '+Number(record.exceptions||0)+'</p><p><b>'+escapeHtml(labels.notes)+':</b> '+escapeHtml(record.notes)+'</p></section><section><h2>'+escapeHtml(labels.observations)+' ('+Number(record.exceptions||0)+')</h2><table><thead><tr><th>'+escapeHtml(labels.reference)+'</th><th>'+escapeHtml(labels.item)+'</th><th>'+escapeHtml(labels.previous)+'</th><th>'+escapeHtml(labels.current)+'</th></tr></thead><tbody>'+rows+'</tbody></table></section><section class="notice"><p>'+escapeHtml(labels.complete)+'</p><p><b>'+escapeHtml(language.notice)+'</b></p><p>'+escapeHtml(labels.validUntil)+': <span dir="ltr">'+escapeHtml(data.expiresAt.slice(0,10))+'</span></p></section><footer><span>Verification</span><b dir="ltr">'+escapeHtml(record.verification)+'</b></footer></div></div>';
+    }
+
+    (async function () {
+      try {
+        const m = location.hash.match(/^#code=(\d{8})$/);
+        if (!m) { fail('Open this page by scanning the QR code on the record.'); return; }
+        const response = await fetch('translation-public.php?code=' + encodeURIComponent(m[1]),
+                                     { cache: 'no-store' });
+        const result = await response.json();
+        if (!result.ok) { fail(result.error || 'This translation is not available.'); return; }
+        if (result.collision) {
+          fail('This number matches more than one record. Please contact the vehicles officer.');
+          return;
+        }
+        renderTranslation(result.data);
+      } catch (e) {
+        fail('Could not load the translation. Check your connection and try again.');
+      }
+    })();
+  </script>
+</body>
+</html>

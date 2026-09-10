@@ -1,0 +1,53 @@
+سلسار | SalSar — سجل عهدة المركبات / Vehicle Custody Log
+Copyright 2026 Abo Steve
+
+This product is licensed under the Apache License, Version 2.0.
+You may obtain a copy of the License at:
+    http://www.apache.org/licenses/LICENSE-2.0
+
+═══════════════════════════════════════════════════════════════════════
+إخلاء مسؤولية — اقرأه قبل أي استعمال
+═══════════════════════════════════════════════════════════════════════
+
+يُقدَّم هذا البرنامج «كما هو» بلا أي ضمان من أي نوع، صريح أو ضمني.
+ولا يتحمّل صاحب الحقوق أي مسؤولية عن أي ضرر ناشئ عن استعماله أو عن
+تعذّر استعماله — أيًّا كان الاستعمال، حسنًا كان أو سيئًا، مقصودًا أو
+غير مقصود، مباشرًا أو غير مباشر.
+
+وبوجه خاص، ولأن هذا النظام يُنتج محاضر تُوقَّع وقد يُحتجّ بها:
+
+  • لا يقدّم صاحب الحقوق أي إقرار بأن مخرجات هذا النظام صالحة قانونًا
+    أو مقبولة لدى أي جهة أو محكمة أو جهة تنظيمية في أي دولة.
+  • مسؤولية التحقق من موافقة النظام للأنظمة واللوائح المعمول بها تقع
+    كاملةً على من يركّبه ويشغّله، لا على صاحب الحقوق.
+  • نصوص الإقرارات والترجمات الواردة في هذا المستودع أمثلة عملية لا
+    استشارة قانونية، ولا يُعتمد عليها بلا مراجعة مختص.
+  • البيانات كلها — الأسماء واللوحات وأرقام الهوية وأرقام الهياكل —
+    مُختلقة بالكامل ولا تخصّ أي شخص أو مركبة.
+
+هذا ليس رأيًا قانونيًا.
+
+═══════════════════════════════════════════════════════════════════════
+DISCLAIMER — read before any use
+═══════════════════════════════════════════════════════════════════════
+
+This software is provided "AS IS", without warranty of any kind, express
+or implied. The copyright holder accepts no liability for any damage
+arising from its use or inability to be used — for ANY use, good or bad,
+intended or unintended, direct or indirect.
+
+Specifically, because this system produces records that get signed and
+may be relied upon:
+
+  • The copyright holder makes no representation that this system's
+    output is legally valid or acceptable to any authority, court or
+    regulator in any jurisdiction.
+  • Verifying compliance with applicable laws and regulations is
+    entirely the responsibility of whoever deploys and operates it.
+  • The acknowledgement texts and translations in this repository are
+    working examples, not legal advice; do not rely on them without
+    review by a qualified professional.
+  • All data — names, plate numbers, identity numbers, chassis numbers —
+    is entirely fictitious and belongs to no real person or vehicle.
+
+This is not legal advice.
