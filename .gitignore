@@ -1,0 +1,29 @@
+# سلسار — ملفات لا تُرفع إلى المستودع
+# تنبيه: هذا الملف يعمل مع git وواجهة API فقط.
+# الرفع بالسحب من موقع GitHub لا يقرأه إطلاقًا.
+
+# --- أسرار ---
+config.php
+**/config.php
+config.txt
+**/config.txt
+
+# --- بيانات تشغيلية: أسماء سائقين، لوحات، أرقام هياكل ---
+fleet-cache.json
+fleet-data.js
+**/fleet-cache.json
+**/fleet-data.js
+translation-cache/
+rate-limit/
+**/translation-cache/
+**/rate-limit/
+
+# --- تصدير كامل للجدول ---
+*-Database.xlsx
+
+# --- ملفات مؤقتة ---
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
