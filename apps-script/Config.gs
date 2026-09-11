@@ -66,7 +66,7 @@ const SALSAR_VEHICLE_CATEGORIES = Object.freeze([
 
 /**
  * البريد المصرَّح له بالتنفيذ المباشر (من محرر Apps Script).
- * هوستنجر تستخدم SALSAR_API_TOKEN (في Script Properties) بدلاً من هذا.
+ * الوسيط على الاستضافة يستخدم SALSAR_API_TOKEN (في Script Properties) بدلًا من هذا.
  * لتغييره: بدّل السطر أدناه ثم احفظ.
  */
 function getAuthorizedEmail_() {

@@ -47,4 +47,4 @@
 `app-template.html`
 
 ## 2.3 — 2026-09-09
-نقل `Hostinger/salsar-private/` خارج جذر الويب. رفع الصور بـ`XMLHttpRequest` مع شريط تقدّم حقيقي.
+نقل `hosting/salsar-private/` خارج جذر الويب. رفع الصور بـ`XMLHttpRequest` مع شريط تقدّم حقيقي.

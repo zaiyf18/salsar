@@ -1,7 +1,7 @@
 /**
  * سلسار V2 — WebApp.gs        الإصدار 2.5.1 — آخر تعديل 2026-09-10
  * =========================================================================
- * نقطة الدخول: يستقبل طلبات GET/POST من هوستنجر، يتحقق من المصادقة، ويوجّه.
+ * نقطة الدخول: يستقبل طلبات GET/POST من الوسيط على الاستضافة، يتحقق من المصادقة، ويوجّه.
  *
  * ما في هذا الملف:
  *  · SALSAR_BOOTSTRAP_SHEETS — مصدر واحد لأوراق bootstrap يستعمله التوجيه والتسخين
@@ -220,7 +220,7 @@ function expectedApiToken_(forceRefresh) {
 function authorize_(request) {
   const suppliedToken = String((request && request.apiToken) || '').trim();
 
-  // ---- المسار الطبيعي: طلب قادم من هوستنجر يحمل رمز API ----
+  // ---- المسار الطبيعي: طلب قادم من الوسيط على الاستضافة يحمل رمز API ----
   if (suppliedToken) {
     const cached = expectedApiToken_(false);
     if (cached && timingSafeEqual_(suppliedToken, cached)) return;

@@ -17,7 +17,7 @@ https://docs.google.com/spreadsheets/d/⟨هذا هو المعرّف⟩/edit
 ## ٣) مشروع Apps Script
 
 1. من الجدول: **إضافات ← Apps Script**.
-2. الصق ملفات `Appscript/*.gs` العشرة بأسمائها نفسها.
+2. الصق ملفات `apps-script/*.gs` العشرة بأسمائها نفسها.
 3. في `Config.gs` ضع `SPREADSHEET_ID` ومعرّفات المجلدات الثلاثة وبريدك في `getAuthorizedEmail_()`.
 4. **إعدادات المشروع ← Script Properties**، أضف:
    - `SALSAR_API_TOKEN` — سلسلة عشوائية 32 محرفًا فأكثر.
@@ -38,9 +38,9 @@ salsar-private/         ← بجوار public_html لا داخله
 **تحقّق من هذا قبل أن تكمل:** حاول الوصول إلى `config.php` من المتصفح بأي مسار تتخيّله. يجب أن يفشل دائمًا. إن ظهر محتواه فالمجلد داخل جذر الويب — أوقف كل شيء وأصلح موضعه.
 
 ثم:
-- انسخ `Hostinger/salsar-private/config.example.php` باسم `config.php` واملأه.
-- تأكد من وجود `.htaccess` في جذر `public_html` على الخادم (اسمه يبدأ بنقطة فتخفيه بعض الأدوات).
-- تأكد من محتويات `Hostinger/public_html/data/`: `qrcode.min.js` والشعار وقالب الوثائق `xlsx`.
+- انسخ `hosting/salsar-private/config.example.php` باسم `config.php` واملأه.
+- أعد تسمية `hosting/public_html/htaccess.txt` إلى `.htaccess` بعد رفعه إلى الخادم. (يُشحن في المستودع بهذا الاسم لأن الأسماء التي تبدأ بنقطة تسقط في كثير من أدوات الضغط والرفع.) بدونه لا تعمل رؤوس الأمان ولا حجب الملفات الحسّاسة.
+- تأكد من محتويات `hosting/public_html/data/`: `qrcode.min.js` والشعار وقالب الوثائق `xlsx`.
 
 ## ٥) دخول Google
 
@@ -56,7 +56,7 @@ salsar-private/         ← بجوار public_html لا داخله
 | طباعة المحضر | صفحة ملخص + ملحق كامل، والأرقام متطابقة مع نافذة التأكيد |
 | رفع محضر مصادق (`PDF`) | يتحول السجل إلى «مصادق عليه» ويظهر الرابط |
 | اختيار لغة ترجمة ثم مسح `QR` | تفتح صفحة الترجمة العامة |
-| `Hostinger/salsar-private/config.php` من المتصفح | فشل الوصول |
+| `hosting/salsar-private/config.php` من المتصفح | فشل الوصول |
 
 ## تدوير الرمز
 

@@ -33,7 +33,7 @@
 متصفح المسؤول
    │  جلسة PHP + دخول Google (النطاق والبريد معًا)
    ▼
-Hostinger/public_html/*.php     استضافة مشتركة
+hosting/public_html/*.php     استضافة مشتركة
    │  وسيط يضيف رمزًا مشتركًا
    ▼
 Apps Script                     نشر ANYONE_ANONYMOUS محروس بالرمز
@@ -51,9 +51,9 @@ Google Sheets (14 ورقة) + ثلاثة مجلدات Drive
 
 | المجلد | يُرفع إلى |
 |---|---|
-| `Appscript/` | مشروع Apps Script |
-| `Hostinger/public_html/` | جذر الويب |
-| `Hostinger/salsar-private/` | **خارج** جذر الويب، بجوار `public_html` |
+| `apps-script/` | مشروع Apps Script |
+| `hosting/public_html/` | جذر الويب |
+| `hosting/salsar-private/` | **خارج** جذر الويب، بجوار `public_html` |
 | `docs/` | مرجع، لا يُرفع |
 
 ## الحالة

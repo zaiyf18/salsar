@@ -51,10 +51,12 @@ Full notes, including seven decisions and the known fragile points, are in `docs
 
 | Folder | Deploys to |
 |---|---|
-| `Appscript/` | the Apps Script project |
-| `Hostinger/public_html/` | the web root |
-| `Hostinger/salsar-private/` | **outside** the web root, beside `public_html` |
+| `apps-script/` | the Apps Script project |
+| `hosting/public_html/` | the web root |
+| `hosting/salsar-private/` | **outside** the web root, beside `public_html` |
 | `docs/` | reference, not deployed |
+
+The first two folders mirror the two deployment targets: an Apps Script project, and any host that runs PHP. `public_html` and `salsar-private` **must sit side by side** on the server, the latter outside the web root.
 
 ## Status
 
